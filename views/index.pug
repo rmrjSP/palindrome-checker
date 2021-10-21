@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter your text here:
+    br
+    input(type="text" id="userText" name="userText")
+    br
+    br
+    button(type="submit") Submit
+    if message
+     p=message
+    br
+    p A plaindrome is read the same backwards and forward, ex. racecar, did, noon
